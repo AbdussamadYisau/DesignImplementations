@@ -1,0 +1,119 @@
+html, body, main {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+main, footer, .mailingList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+   /* But also accounting for potential margin-bottom of last child */
+
+    margin-bottom: -40px;
+}
+
+.push, footer {
+    height: 40px;
+}
+
+main img.logo{
+    margin-top: 2em;
+}
+
+main h3 {
+    color: hsl(0, 0%, 59%);
+    font-size: 25px;
+}
+
+main h3 .soon {
+    color: black;
+}
+
+.subscribe {
+    font-size: 0.8em;
+    margin-top: -0.2em;
+}
+
+input, button{
+    border-radius: 25px;
+    padding: 10px;
+    width: 20em;
+    border: 1px solid hsl(223, 100%, 88%);
+    margin-bottom: 1em;
+}
+
+button {
+    color: white;
+    background-color:hsl(223, 87%, 63%);
+    width: 22em;
+}
+
+img.illustrationDash {
+    width: 22em;
+    height: 50%;
+}
+
+footer .socialMedia {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+footer .socialMedia div {
+    border-radius: 25px;
+    padding: 10px;
+    /* border: solid 2px green; */
+    background-color: whitesmoke;
+    /* box-shadow: 0px 5px 5px 0px whitesmoke; */
+}
+
+.customIcon {
+    color: hsl(223, 87%, 63%);
+}
+
+footer .copyRight {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.8em;
+}
+.attribution { 
+    font-size: 0.6em; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-device-width: 1000px) {
+    .mailingList {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+    }
+
+    input, button{
+        border-radius: 25px;
+        padding: 10px;
+        width: 15em;
+        border: 1px solid hsl(223, 100%, 88%);
+        margin-bottom: 1em;
+    }
+    
+    button {
+        color: white;
+        background-color:hsl(223, 87%, 63%);
+        width: 7em;
+    }
+}
