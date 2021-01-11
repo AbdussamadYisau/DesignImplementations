@@ -1,4 +1,4 @@
-html, body, main {
+html, body {
     height: 100%;
 }
 body {
@@ -22,7 +22,7 @@ main {
     /* Equal to height of footer */
    /* But also accounting for potential margin-bottom of last child */
 
-    margin-bottom: -50px;
+    margin-bottom: -40px;
 }
 
 .push, footer {
@@ -64,7 +64,7 @@ button {
 img.illustrationDash {
     width: 22em;
     height: 50%;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 footer {
